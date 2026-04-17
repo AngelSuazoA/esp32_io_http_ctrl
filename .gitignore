@@ -1,0 +1,21 @@
+# ESP-IDF
+/build/
+managed_components/
+
+# ESP-IDF generated files
+sdkconfig.old
+*.bin
+*.elf
+*.map
+
+# Ninja / CMake
+.ninja_log
+.ninja_deps
+CMakeFiles/
+
+# VS Code (opcional)
+.vscode/.browse.VC.db
+
+# OS
+.DS_Store
+Thumbs.db
