@@ -14,4 +14,5 @@ idf_component_register(
         esp_http_server
         esp_driver_gpio    
         esp_driver_mcpwm
+        esp_timer
 )

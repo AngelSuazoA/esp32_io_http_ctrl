@@ -121,6 +121,9 @@ void app_main(void)
 
     pwm_driver_init();
     ESP_LOGI("MAIN", "PWM ready");
+    pwm_driver_update(PHASE_A, 16000.0, 0.0f);
+    pwm_driver_update(PHASE_B, 16000.0, 0.0f);
+    pwm_driver_update(PHASE_C, 16000.0, 0.0f);
 
     start_webserver();
     ESP_LOGI("MAIN", "System ready");

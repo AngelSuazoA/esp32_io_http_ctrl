@@ -16,5 +16,5 @@ dependencies:
 direct_dependencies:
 - espressif/cjson
 manifest_hash: b91b240a71528e322c2aea148114f5f218e6f5f963f6d24998882074b7fa1422
-target: esp32
+target: esp32s3
 version: 3.0.0
