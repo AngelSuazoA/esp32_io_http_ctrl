@@ -168,7 +168,7 @@ static void seq_timer_cb(void *arg)
        /* ---- A steady ---- */
        case 1:
            pwm_driver_update(PHASE_A, state.steady.Frequency, state.steady.Duty_used);
-           next_delay_us = 8000ULL;   /* 8 ms until B/C inrush */
+           next_delay_us = 3000ULL;   /* 8 ms until B/C inrush */
            break;
        /* ---- C inrush (R Frame) / C inrush (V Frame) ---- */
        case 2:
@@ -180,7 +180,7 @@ static void seq_timer_cb(void *arg)
        case 3:
            pwm_driver_update(PHASE_C, state.steady.Frequency, state.steady.Duty_used);
            if (state.active_test == TEST_V_FRAME) {
-               next_delay_us = 8000ULL;
+               next_delay_us = 3000ULL;
            }
            break;
        /* ---- C inrush (V Frame only) ---- */

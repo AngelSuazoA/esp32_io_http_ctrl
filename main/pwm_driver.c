@@ -133,6 +133,6 @@ void pwm_driver_stop(void)
     //    ESP_ERROR_CHECK(
     //        mcpwm_comparator_set_compare_value(comparators[i], period_ticks[i]));
        set_enable((pwm_phase_t)i, false);
-       esp_rom_delay_us(10000);
+       esp_rom_delay_us(5000);
    }
 }
